@@ -1,0 +1,49 @@
+<!--
+There are two input for  two different purposes:
+1) Get request- The integer given to the field send the request to the detected_results endpoint
+   and then fetch the result corresponding to that integer value.
+
+2) Post request- This field requires image file as input and it sends the request to the detect_cellphone
+   endpoint and then fetch the result the api provides by applying model on it and detecting whether it is
+   cellphone or not.
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for defining character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Checking the working of the API Created</title>
+</head>
+<body>
+    <!-- Heading for entering an integer value -->
+    <h1>Type Index value</h1>
+    
+    <!-- Form for GET request -->
+    <form action="http://localhost:8000/detected_results/" method="get">
+        <!-- Label for the input field -->
+        <label for="integer_input">Enter an Integer:</label>
+        <!-- Input field for entering an integer -->
+        <input type="number" id="integer_input" name="index_of_image">
+        <!-- Button to submit the form -->
+        <button type="submit">Submit Integer</button>
+    </form>
+
+    <!-- Heading for uploading an image -->
+    <h1>Upload Image</h1>
+    <!-- Form for POST request -->
+    <form action="http://localhost:8000/detect_cellphone/" method="post" enctype="multipart/form-data">
+        <!-- Label for the file input -->
+        <label for="image_input">Upload Image:</label>
+        <!-- Input field for selecting an image file -->
+        <input type="file" id="image_input" name="file" accept="image/*">
+        <!-- Button to submit the form -->
+        <button type="submit">Upload Image</button>
+    </form>
+
+</body>
+</html>

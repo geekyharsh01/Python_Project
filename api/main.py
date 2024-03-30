@@ -32,9 +32,8 @@ async def read_imagefile(file) -> Image.Image:
     return image
 
 
-
-@app.get("/find")
-async def get_image(index_of_image: int)->dict :
+@app.get("/detected_results")
+async def get_prediction(index_of_image: int)->dict :
     """
     An endpoint to retrieve the prediction for an image at a specified index, using the list initiated above named list_of_prediction
 
