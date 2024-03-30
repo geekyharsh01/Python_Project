@@ -1,4 +1,4 @@
-------------------------------------------------------------------------Steps to Run the API--------------------------------------------------------------
+-----------------------------------------Steps to Run the API--------------------------------------------------------------
 
 1)Open terminal in this directory and then install all the requirements on your pc using command - pip install -r requirements.txt 
 
