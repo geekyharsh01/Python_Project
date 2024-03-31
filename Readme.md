@@ -15,9 +15,9 @@ In the .\api\main.py containes the api endpoints :
 
 2) GET / detected_cellphone - All the predictions that are done by the detect_cellphone endpoints are stored in the list which can be retrieved using this endpoint by inputting the index , if index out of range it will show.
 
-3) Created a ApiCheck.html, if API server is on then requests can be send throught this webpage and the results can be retrieved from the api.
+Created a ApiCheck.html, if API server is on then requests can be send throught this webpage and the results can be retrieved from the api.
 
-In the .\api\models.py contains the resnet-50 model which is used to predict the cellphone for the input image
+In the .\api\models.py contains the resnet-50 model which is used to predict the cellphone for the input image.
 
 
    
